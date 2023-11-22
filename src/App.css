@@ -1,0 +1,155 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.todos {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px;
+  font-family: 'Arial', sans-serif;
+  
+  max-width: 350px;
+  margin: auto;
+  margin-top: 50PX;
+  background-color: #9db5e4;
+  border-radius: 4px;
+  
+  @media only screen and (max-width: 768px) {
+    padding: 10px; 
+    font-size: 14px;
+  }
+}
+
+.task-text {
+  max-width: 200px; /* Set your desired max-width */
+  overflow: hidden;
+  text-overflow: ellipsis; /* Adds ellipsis (...) for overflow text */
+  white-space: nowrap;
+  font-family: cursive;
+}
+
+.todos input[type="text"] {
+  background-color: #f8f9fb;
+  border: 1px solid blue;
+  color: blue;
+  display: flex;
+}
+
+.todos h1 {
+  text-align: center;
+  background-color: #94b0e9;
+  border-radius: 4px;
+  color: blue;
+}
+
+.task-form {
+  display: flex;
+  margin-bottom: 20px;
+  width: 100%;
+  max-width: 600px;
+}
+
+.searchBox {
+  flex-grow: 1;
+  margin-right: 10px;
+  width: auto;
+  display: flex;
+  width: 70%;
+}
+
+.searchBInside {
+  width: 50%;
+}
+
+
+/* .searchBInside {
+  width: 100%; 
+  padding: 10px;
+  border: 1px solid #ced4da;
+  border-radius: 4px;
+  font-size: 16px;
+} */
+
+.button {
+  flex-shrink: 0;
+  width: 50%;
+}
+
+.childBtn {
+  width: 100%;
+}
+
+.task-list {
+  list-style-type: none;
+  list-style: none;
+  padding: 0;
+}
+
+.task-item {
+  margin-bottom: 5px;
+  padding: 8px;
+  background-color: #3f93e6;
+  border: 1px solid #dee2e6;
+  border-bottom: 1px solid #ccc;
+  border-radius: 4px;
+  color: blue;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.delete-icon {
+  cursor: pointer;
+  color: rgb(16, 6, 6);
+  transition: color 0.3s; 
+  margin-left: 5px;
+}
+
+.delete-icon:hover {
+  color: red; 
+}
+
+.toggle-icon {
+  cursor: pointer;
+  margin-right: 5px;
+}
+
+.toggle-icon:hover {
+  color: green; 
+}
