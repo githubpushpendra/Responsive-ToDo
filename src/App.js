@@ -6,7 +6,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 function App() {
   return (
     
-      <BrowserRouter>
+      <BrowserRouter basename="/Responsive-ToDo">
         <div className='app'>
         <Routes>
             <Route path="/" element={<AddTask />} />
