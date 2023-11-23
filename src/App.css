@@ -37,6 +37,19 @@
   }
 }
 
+.background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-image: url('../imgs/clocks.png');
+  background-size: cover; 
+  z-index: -1;
+  overflow: hidden;
+}
+
+
 .todos {
   display: flex;
   flex-direction: column;
@@ -53,8 +66,14 @@
   @media only screen and (max-width: 768px) {
     padding: 10px; 
     font-size: 14px;
+    .background {
+      background-size: 100% 100%; /* Adjust as needed for smaller screens */
+      display: flex;
+    }
   }
 }
+
+
 
 .task-text {
   max-width: 200px; /* Set your desired max-width */

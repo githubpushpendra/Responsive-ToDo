@@ -59,6 +59,7 @@ export default function AddTask() {
   }
 
   return (
+    <div className='background'>
 
     <div className='todos'>
       <h1>TODOs</h1>
@@ -93,6 +94,7 @@ export default function AddTask() {
       </ul>
     </div>
 
+    </div>
     </div>
   )
 }
