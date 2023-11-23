@@ -83,6 +83,7 @@
   margin-bottom: 20px;
   width: 100%;
   max-width: 600px;
+  align-items: center;
 }
 
 .searchBox {
@@ -90,11 +91,13 @@
   margin-right: 10px;
   width: auto;
   display: flex;
-  width: 70%;
+  width: 100%;
+  /* overflow: hidden; */
 }
 
 .searchBInside {
   width: 50%;
+  /* overflow: hidden; */
 }
 
 
@@ -107,13 +110,18 @@
 } */
 
 .button {
-  flex-shrink: 0;
+  flex-shrink: 1px;
   width: 50%;
+  height: 50%;
 }
 
 .childBtn {
-  width: 100%;
+  width: 50%;
 }
+
+/* .main-btn {
+  height: 50%;
+} */
 
 .task-list {
   list-style-type: none;

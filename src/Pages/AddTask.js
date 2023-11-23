@@ -72,7 +72,7 @@ export default function AddTask() {
         </div>
         <div className='button'>
           <div className='childBtn'>
-            <input type="submit" value="+" className='btn btn-primary btn-sm' />
+            <input type="submit" value="+" className='btn btn-primary btn-sm main-btn' />
           </div>
         </div>
         <i class="bi bi-plus"></i>
