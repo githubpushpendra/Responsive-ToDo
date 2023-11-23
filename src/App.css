@@ -13,6 +13,7 @@
   }
 }
 
+
 .App-header {
   background-color: #282c34;
   min-height: 100vh;
@@ -42,11 +43,11 @@
   top: 0;
   left: 0;
   width: 100vw;
-  height: 100vh;
+  height: 100%;
   background-image: url('../imgs/clocks.png');
   background-size: cover; 
   z-index: -1;
-  overflow: hidden;
+  overflow: auto;
 }
 
 
@@ -56,6 +57,7 @@
   align-items: center;
   padding: 10px;
   font-family: 'Arial', sans-serif;
+  height: auto;
   
   max-width: 350px;
   margin: auto;
