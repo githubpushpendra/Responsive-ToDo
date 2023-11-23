@@ -69,6 +69,7 @@
   border: 1px solid blue;
   color: blue;
   display: flex;
+  border-radius: 4px;
 }
 
 .todos h1 {
@@ -89,6 +90,7 @@
 .searchBox {
   flex-grow: 1;
   margin-right: 10px;
+  margin-left: 20px;
   width: auto;
   display: flex;
   width: 100%;
