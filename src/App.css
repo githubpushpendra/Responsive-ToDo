@@ -2,51 +2,13 @@
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-
 .background {
   position: fixed;
   top: 0;
   left: 0;
   width: 100vw;
-  height: 100%;
+  height: 100vw;
   background-image: url('../imgs/clocks.png');
-  background-size: cover; 
-  z-index: -1;
   overflow: auto;
 }
 
@@ -60,6 +22,7 @@
   height: auto;
   
   max-width: 350px;
+  min-height: 300px;
   margin: auto;
   margin-top: 50PX;
   background-color: #9db5e4;
@@ -71,19 +34,27 @@
     padding: 10px; 
     font-size: 14px;
     .background {
-      background-size: 100% 100%; /* Adjust as needed for smaller screens */
+      background-size: 100% 100%; 
       display: flex;
     }
   }
+  
 }
 
-
+@media (max-width: 280px) {
+  .task-form {
+    flex-direction: column;
+  }
+  
+  .button {
+    margin-top: 10px;
+  }
+}
 
 .task-text {
-  max-width: 200px; /* Set your desired max-width */
+  max-width: 220px; 
   overflow: hidden;
-  text-overflow: ellipsis; /* Adds ellipsis (...) for overflow text */
-  white-space: nowrap;
+  white-space: normal;
   font-family: cursive;
   font-size: large;
 }
@@ -94,6 +65,7 @@
   color: blue;
   display: flex;
   border-radius: 4px;
+  height: 37px;
 }
 
 .todos h1 {
@@ -118,22 +90,8 @@
   width: auto;
   display: flex;
   width: 100%;
-  /* overflow: hidden; */
 }
 
-.searchBInside {
-  width: 50%;
-  /* overflow: hidden; */
-}
-
-
-/* .searchBInside {
-  width: 100%; 
-  padding: 10px;
-  border: 1px solid #ced4da;
-  border-radius: 4px;
-  font-size: 16px;
-} */
 
 .button {
   flex-shrink: 1px;
@@ -144,10 +102,6 @@
 .childBtn {
   width: 50%;
 }
-
-/* .main-btn {
-  height: 50%;
-} */
 
 .task-list {
   list-style-type: none;
