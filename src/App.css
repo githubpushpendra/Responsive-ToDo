@@ -141,3 +141,11 @@
 .toggle-icon:hover {
   color: green; 
 }
+
+.auth-btn-reg{
+  margin: 20px;
+}
+
+.auth-btn-log{
+  margin: 20px;
+}
