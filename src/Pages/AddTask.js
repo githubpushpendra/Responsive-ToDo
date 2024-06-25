@@ -98,6 +98,7 @@ export default function AddTask() {
       setError("Please Enter Valid Todo Name");
       setTimeout(()=>setError(null), 3000)
     }
+    setLoader(false)
   }
 
   async function handleSubmit(event){
@@ -105,7 +106,6 @@ export default function AddTask() {
     setLoader(true)
     setName('')
     await createTask()
-    setLoader(false)
   }
 
   const handleDelete = (index)=>{
