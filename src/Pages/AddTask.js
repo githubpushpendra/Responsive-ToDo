@@ -83,7 +83,10 @@ export default function AddTask() {
               setError("Please try again")
               setTimeout(()=>setError(null), 3000)
             }
-            else if(res.status === 201) fetchTasks()
+            else if(res.status === 201) {
+              fetchTasks()
+              setName('')
+            } 
             else {
               setError("Please try again")
               setTimeout(()=>setError(null), 3000)
@@ -91,20 +94,20 @@ export default function AddTask() {
           } catch(e) {
             console.log(e)
           }
+          setLoader(false)
         }
       })
     }
     else {
       setError("Please Enter Valid Todo Name");
       setTimeout(()=>setError(null), 3000)
+      setLoader(false)
     }
-    setLoader(false)
   }
 
   async function handleSubmit(event){
     event.preventDefault();  
     setLoader(true)
-    setName('')
     await createTask()
   }
 
