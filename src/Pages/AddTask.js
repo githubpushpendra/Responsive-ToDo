@@ -21,8 +21,8 @@ export default function AddTask() {
   const [logout, setLogout] = useState(false)
   const [loader, setLoader] = useState(false)
 
-  // const backend_home_url = 'https://todos-24y5.onrender.com'
-  const backend_home_url = "http://localhost:5000"
+  const backend_home_url = 'https://todos-24y5.onrender.com'
+  // const backend_home_url = "http://localhost:5000"
 
   const fetchTasks = ()=>{
     makeRequest(`${backend_home_url}/tasks`, 'GET', null, async(err, reqObj)=>{

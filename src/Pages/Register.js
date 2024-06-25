@@ -11,8 +11,8 @@ export default function Register() {
   const [email, setEmail] = useState('')
   const [password, setPassword] = useState('')
   const [loader, setLoader] = useState(false)
-  // const backend_home_url = 'https://todos-24y5.onrender.com'
-  const backend_home_url = 'http://localhost:5000'
+  const backend_home_url = 'https://todos-24y5.onrender.com'
+  // const backend_home_url = 'http://localhost:5000'
   const handleRegister = async()=>{
     setLoader(true)
     try{

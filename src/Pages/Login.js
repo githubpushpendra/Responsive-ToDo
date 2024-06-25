@@ -11,19 +11,20 @@ export default function Login() {
   const [error, setError] = useState(null)
   const [loader, setLoader] = useState(false)
 
+  const backend_home_url = 'https://todos-24y5.onrender.com'
+  // const backend_home_url = 'http://localhost:5000'
+
   const handleLogin = async()=>{
 
     setLoader(true)
-
-    // const backend_home_url = 'https://todos-24y5.onrender.com'
-    const backend_home_url = 'http://localhost:5000'
     try{
       const res = await axios.post(`${backend_home_url}/signin`, {email:email, password:password},{
       Headers:{
         'Content-Type': 'application/json',
       }
     })
-      if(res.data.Authorization === undefined || res.data.Authorization === null) {
+      if(res.status === 404) setError("Server is not running")
+      else if(res.data.Authorization === undefined || res.data.Authorization === null) {
         setError(res.data)
         setTimeout(()=>setError(null), 3000)
       } else {
