@@ -1,16 +1,16 @@
 {
   "files": {
     "main.css": "/Responsive-ToDo/static/css/main.9b8e132a.css",
-    "main.js": "/Responsive-ToDo/static/js/main.6090397e.js",
+    "main.js": "/Responsive-ToDo/static/js/main.aff4cf07.js",
     "static/js/787.9edc70c5.chunk.js": "/Responsive-ToDo/static/js/787.9edc70c5.chunk.js",
     "static/media/clocks.png": "/Responsive-ToDo/static/media/clocks.ab5960bcf8282cea6055.png",
     "index.html": "/Responsive-ToDo/index.html",
     "main.9b8e132a.css.map": "/Responsive-ToDo/static/css/main.9b8e132a.css.map",
-    "main.6090397e.js.map": "/Responsive-ToDo/static/js/main.6090397e.js.map",
+    "main.aff4cf07.js.map": "/Responsive-ToDo/static/js/main.aff4cf07.js.map",
     "787.9edc70c5.chunk.js.map": "/Responsive-ToDo/static/js/787.9edc70c5.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.9b8e132a.css",
-    "static/js/main.6090397e.js"
+    "static/js/main.aff4cf07.js"
   ]
 }
