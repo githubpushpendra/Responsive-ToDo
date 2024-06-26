@@ -84,7 +84,7 @@ export default function AddTask() {
               setTimeout(()=>setError(null), 3000)
             }
             else if(res.status === 201) {
-              fetchTasks()
+              await fetchTasks()
               setName('')
             } 
             else {
@@ -108,7 +108,7 @@ export default function AddTask() {
   async function handleSubmit(event){
     event.preventDefault();  
     setLoader(true)
-    await createTask()
+    createTask()
   }
 
   const handleDelete = (index)=>{
