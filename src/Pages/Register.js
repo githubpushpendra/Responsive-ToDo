@@ -67,7 +67,7 @@ export default function Register() {
         {error && <p style={{ color: 'darkred', margin: '0' }}>{error}</p>} 
 
         {
-          loader ? <CustomLoader /> :
+          loader ? <CustomLoader content="Registering..." /> :
           <button className='btn btn-primary' style={{marginTop:"20px"}} onClick={handleRegister}>Register</button>
         }
         

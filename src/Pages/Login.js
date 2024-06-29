@@ -61,7 +61,7 @@ export default function Login() {
           </div>
         </div>
         {error && <p style={{ color: 'darkred', margin: '0' }}>{error}</p>} 
-        { loader ? <CustomLoader /> :
+        { loader ? <CustomLoader content="Signing..." /> :
           <button className='btn btn-primary' style={{marginTop:"20px"}} onClick={handleLogin}>Login</button>
         }
       </div>

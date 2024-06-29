@@ -4,9 +4,9 @@ import "../styles/cusStyle.css";
 
 import { Loader } from "rsuite";
 
-const CustomLoader = () => (
+const CustomLoader = (props) => (
   <>
-    <Loader className="loader btn btn-primary" content="Loading..." />
+    <Loader className="loader btn btn-primary" content={props.content} />
   </>
 );
 
